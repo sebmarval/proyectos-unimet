@@ -1,24 +1,9 @@
-def calcular(numdearepas):
-    
-    aguainicio = 300  
-    salinicio = 3     
-    harinainicio = 200  
+print("ingredientes de la arepa")
 
-    
-    agua = numdearepas*aguainicio
-    sal = numdearepas*salinicio
-    harina = numdearepas*harinainicio
-
-    return agua, sal, harina
-
-
-numdearepas = int(input("Ingrese la cantidad de arepas que desea hacer: "))
-
-
-agua, sal, harina = calcular(numdearepas)
-
-
-print(f"\nPara {numdearepas} arepas, será necesario tener:")
-print(f"Agua: {agua} gramos")
-print(f"Sal: {sal} gramos")
-print(f"Harina: {harina} gramos")
+agua = int(input("Cuantas tazas de agua?: "))
+harina = int(input("Cuantas tazas de harina?: "))
+sal = float(input("Cuantas cucharadas de sal?: "))
+aceite = float(input("Cuantas cucharadas de aceite?: "))
+bowl = agua + harina + sal 
+budare = aceite + bowl
+print(budare)
