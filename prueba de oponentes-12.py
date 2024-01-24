@@ -10,15 +10,15 @@ ataques = ["malicioso","placaje","ascuas"]
 while Ps_jugador > 0 and Ps_oponente > 0:
     ataque_jugador = input("ataque: ")
     ataque_jugador = ataque_jugador.lower() 
-    if ataque_jugador == ataques(0):
+    if ataque_jugador == ataques[0]:
         print("has reducido la defensa de tu oponente en 10 puntos")
         defensa_oponente = defensa_oponente - 10
         if defensa_oponente <= 0:
             defensa_oponente = 1
-    elif ataque_jugador == ataques(1):
+    elif ataque_jugador == ataques[1]:
         print("has reducido la salud de tu oponente")
         Ps_oponente -= 35 * (100/defensa_oponente)
-    elif ataque_jugador == ataques(2):
+    elif ataque_jugador == ataques[2]:
         print("diste un golpe severo a tu oponente")
         pass
         Ps_oponente -= 20 
